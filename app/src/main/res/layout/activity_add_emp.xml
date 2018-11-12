@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AddEmpActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Name: "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="employee name"
+            android:hint="employee name"
+            android:inputType="textPersonName"
+            android:layout_weight=".5"
+            android:id="@+id/empName"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Department: "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="department name"
+            android:hint="department name"
+            android:inputType="text"
+            android:layout_weight=".5"
+            android:id="@+id/empDept"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:text="Salary: "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints="salary"
+            android:hint="salary"
+            android:inputType="text"
+            android:layout_weight=".5"
+            android:id="@+id/empSalary"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1.5">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight=".75"
+            android:text="SAVE"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight=".75"
+            android:text="CANCEL"/>
+    </LinearLayout>
+
+</LinearLayout>
