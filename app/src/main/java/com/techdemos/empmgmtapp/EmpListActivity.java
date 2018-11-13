@@ -81,8 +81,9 @@ public class EmpListActivity extends BaseAppCompatActivity {
 //                    Log.d(TAG, "i: "+1);
 //                    Log.d(TAG, "id: "+emp.getId());
 //                    Log.d(TAG, "name: "+emp.getName());
-                    mAdapter.setEmployeesData(listResource.data);
                 }
+                if (listResource.data!=null)
+                    mAdapter.setEmployeesData(listResource.data);
             }
         });
     }

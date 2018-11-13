@@ -99,7 +99,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 //        mMap.moveCamera(CameraUpdateFactory.newLatLng(latlng));
         float zoom=15;//1: World 5: Landmass/continent 10: City 15: Streets 20: Buildings
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(home, zoom));
-        BitmapDescriptor btmd= BitmapDescriptorFactory.fromResource(R.drawable.android);
+        BitmapDescriptor btmd= BitmapDescriptorFactory.fromResource(R.drawable.me);
         GroundOverlayOptions homeOverlay = new GroundOverlayOptions()
                 .image(btmd)
                 .position(home, 100);
